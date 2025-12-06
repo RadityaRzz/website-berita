@@ -1,0 +1,275 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #eaf3ff;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 40px;
+  box-shadow: 0 2px 5px gray;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #2a77ff;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+header nav a:hover {
+  color: #2a77ff;
+}
+
+.nav-btns input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.btn-daftar {
+  background-color: #2a77ff;
+  color: white;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 5px;
+}
+
+.btn-masuk {
+  background-color: #e4e4e4;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 5px;
+}
+
+/* BANNER */
+.banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.banner-img {
+  width: 70%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* REELS */
+.reels {
+  padding: 30px 60px;
+}
+
+.reels-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reels-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  overflow-x: auto;       /* biar bisa geser ke kanan */
+  white-space: nowrap;    /* cegah turun ke bawah */
+  padding-bottom: 10px;   /* kasih sedikit ruang bawah */
+}
+
+.reel-item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 120px;
+  flex: 0 0 auto;         /* biar item tetap sejajar, gak mengecil */
+}
+
+
+.reel-item img {
+  width: 100%;
+}
+
+/* TOMBOL SELENGKAPNYA */
+.btn-selengkapnya {
+  background-color: #2a77ff;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-selengkapnya:hover {
+  background-color: #1d5fd4;
+}
+
+/* BERITA */
+.berita {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  gap: 40px;
+}
+
+.berita-terkini, .berita-populer {
+  flex: 1;
+}
+
+.grid-terkini {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* BERITA POPULER */
+.populer-list {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  list-style: none;
+}
+
+.populer-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.nomor {
+  background-color: #2a77ff;
+  color: white;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  margin-right: 10px;
+}
+
+.kategori {
+  background-color: #eaf3ff;
+  color: #2a77ff;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.populer-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* NASIONAL */
+.nasional {
+  padding: 30px 60px;
+}
+
+.nasional-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;      /* biar bisa geser ke kanan */
+  white-space: nowrap;   /* cegah turun ke bawah */
+  padding-bottom: 10px;
+}
+
+.nasional-item {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  flex: 0 0 auto;        /* biar tetap sejajar */
+  overflow: hidden;
+}
+
+.nasional-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.nasional-item p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #d1e4ff;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer-left p, .footer-mid a {
+  font-size: 14px;
+  color: black;
+}
+
+.footer-right h1 {
+  font-size: 24px;
+}
+
+.footer-right span {
+  color: #2a77ff;
+}
+
+.footer-mid a {
+  text-decoration: none;
+  display: block;
+}
+
+.footer-mid a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #c8ddff;
+  padding: 10px;
+  font-size: 13px;
+}

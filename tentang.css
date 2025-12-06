@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #bcd9ff, #dbeaff); 
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    gap: 20px;
+}
+
+.back {
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title-box {
+    margin: 0 auto;
+    background: #E9E9E9;
+    padding: 12px 45px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* CARD PUTIH */
+.card-wrapper {
+    width: 65%;
+    background: white;
+    margin: 60px auto 80px auto;   /* card turun & pas di tengah area biru */
+    padding: 40px 50px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+/* TEKS */
+.card-wrapper p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+/* WATERMARK */
+.watermark {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.12);
+    text-align: right;
+    line-height: 55px;
+}
+
+/* GARIS PEMBATAS */
+.line {
+    width: 95%;
+    height: 4px;
+    background: rgba(0,0,0,0.12);
+    margin: 20px auto 0 auto;
+    border-radius: 5px;
+}
